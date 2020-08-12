@@ -1,0 +1,15 @@
+.container{
+    width:70%;
+    margin:auto;
+    text-align:center;
+}
+
+.dice{
+    text-align:center;
+    display:inline-block;
+}
+
+.dice{
+    margin:3rem 5rem 2rem 5rem;
+}
+
