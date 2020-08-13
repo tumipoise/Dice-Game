@@ -19,45 +19,45 @@ play.addEventListener("click", function () {
   let randomDiceSource = `images/${randomDice}`;
   dice2.setAttribute("src", randomDiceSource);
 
-  if (roundChecker === 0) {
-    round[0].innerHTML =
-      randomNo1 === randomNo2
-        ? "Round I : draw"
-        : randomNo1 > randomNo2
-        ? "Round I : Nengi"
-        : "Round I : Ozo";
+  // if (roundChecker === 0) {
+  //   round[0].innerHTML =
+  //     randomNo1 === randomNo2
+  //       ? "Round I : draw"
+  //       : randomNo1 > randomNo2
+  //       ? "Round I : Nengi"
+  //       : "Round I : Ozo";
 
-    roundChecker += 1;
-  }
+  //   roundChecker += 1;
+  // }
 
-  if (roundChecker === 1) {
-    round[1].innerHTML =
-      randomNo1 === randomNo2
-        ? "Round II : draw"
-        : randomNo1 > randomNo2
-        ? "Round II : Nengi"
-        : "Round II : Ozo";
+  // if (roundChecker === 1) {
+  //   round[1].innerHTML =
+  //     randomNo1 === randomNo2
+  //       ? "Round II : draw"
+  //       : randomNo1 > randomNo2
+  //       ? "Round II : Nengi"
+  //       : "Round II : Ozo";
 
-    roundChecker += 1;
-  }
+  //   roundChecker += 1;
+  // }
 
-  if (roundChecker === 2) {
-    round[2].innerHTML =
-      randomNo1 === randomNo2
-        ? "Round III : draw"
-        : randomNo1 > randomNo2
-        ? "Round III : Nengi"
-        : "Round III : Ozo";
+  // if (roundChecker === 2) {
+  //   round[2].innerHTML =
+  //     randomNo1 === randomNo2
+  //       ? "Round III : draw"
+  //       : randomNo1 > randomNo2
+  //       ? "Round III : Nengi"
+  //       : "Round III : Ozo";
 
-    roundChecker += 1;
-  }
+  //   roundChecker += 1;
+  // }
 
 
 
-  // player.innerHTML =
-  //   randomNo1 === randomNo2
-  //     ? "It's a draw!"
-  //     : randomNo1 > randomNo2
-  //     ? "🏳 Nengi wins!"
-  //     : "🏳 Ozo wins!";
+  player.innerHTML =
+    randomNo1 === randomNo2
+      ? "It's a draw!"
+      : randomNo1 > randomNo2
+      ? "🏳 Nengi wins!"
+      : "🏳 Ozo wins!";
 });
