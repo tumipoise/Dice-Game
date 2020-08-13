@@ -1,15 +1,66 @@
-.container{
-    width:70%;
-    margin:auto;
-    text-align:center;
+body{
+  margin:auto;
 }
 
-.dice{
-    text-align:center;
-    display:inline-block;
+.container {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+.dicegame {
+  display: flex;
+  justify-content: center;
 }
 
-.dice{
-    margin:3rem 5rem 2rem 5rem;
+.dice {
+  text-align: center;
+  /* display: inline-block; */
 }
 
+#dice{
+  width:100%;
+}
+
+.dice {
+  margin: 3rem 5rem 2rem 5rem;
+}
+
+.card {
+  width: 10rem;
+  height: 10rem;
+  position: absolute !important;
+  margin: 1rem;
+  top: 20%;
+}
+
+#reset {
+  border-radius: 5px;
+  padding: 4px 18px;
+  background: white;
+  border: 1px solid #333;
+  margin-left: 5px;
+}
+
+#play {
+    background: #333;
+    border: 0;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 18px;
+}
+
+@media screen and (max-width:768px){
+  .dicegame {
+    /* flex-direction: column; */
+    /* background-color: red; */
+  }
+  #dice{
+    max-width:70%;
+  }
+}
+
+@media screen and (max-width:556px){
+  .dicegame {
+    flex-direction: column;
+  }
+}
