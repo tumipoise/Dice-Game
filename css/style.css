@@ -2,11 +2,21 @@ body{
   margin:auto;
 }
 
+
+.modal-button{
+  position: absolute !important;
+  margin: 1rem 1rem 1rem 4rem;
+  top: 35%;
+  left:-0.1%;
+}
+
 .container {
   width: 70%;
   margin: auto;
   text-align: center;
+  
 }
+
 .dicegame {
   display: flex;
   justify-content: center;
@@ -25,13 +35,13 @@ body{
   margin: 3rem 5rem 2rem 5rem;
 }
 
-.card {
+/* .card {
   width: 10rem;
   height: 10rem;
   position: absolute !important;
   margin: 1rem;
   top: 20%;
-}
+} */
 
 #reset {
   border-radius: 5px;
@@ -63,4 +73,5 @@ body{
   .dicegame {
     flex-direction: column;
   }
+
 }
